@@ -1,0 +1,5 @@
+My Django project template
+
+- views moved to 'controllers' folder
+- debug-toolbar+south
+- empty 'web' app
