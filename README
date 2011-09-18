@@ -1,5 +1,7 @@
-My Django project template
+My Django 1.3 project template
 
 - views moved to 'controllers' folder
-- debug-toolbar+south
+- debug-toolbar+annoying
 - empty 'web' app
+- config is split to files
+- separate develop/production config
