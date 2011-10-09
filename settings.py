@@ -29,7 +29,7 @@ for filename in os.listdir(CONFIG_ROOT):
 
 	module_name = '%s.%s' % (CONFIG_MODULE_NAME, filename)
 	try:
-		config_module = __import__(module_name, globals(), locals(), ['settings'])
+		config_module = __import__(module_name, globals(), locals(), [])
 		for setting in dir(config_module):
 			if not setting.startswith('_') and setting == setting.upper():
 				locals()[setting] = getattr(config_module, setting)
